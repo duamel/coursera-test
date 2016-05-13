@@ -1,0 +1,122 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color:black;
+  font-family: sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: darkgrey;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 20px;
+  padding-left: 0px;
+}
+
+.navbar-brand h1 {
+  color: lightgrey;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+  line-height: .75;
+}
+.navbar-brand h1:hover, .navbar-brand h1:focus {
+  text-shadow: 1px 1px 1px white;
+  color: black;
+  text-decoration: none;
+}
+
+#nav-list a {
+  text-align: center;
+}
+#nav-list a:hover {
+  background: light lightgrey;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+
+.container {
+  width: 100%;
+}
+
+/* END HEADER */
+
+/* BODY */
+.bodyarea {
+  background: grey;
+  height: 1500px;
+  border: 1px solid white;
+}
+
+.menucontainers {
+  padding: 0px;
+  margin: 0px;
+ }
+
+.menuboxes {
+  position: relative;
+  border: 1px solid black;
+  padding: 10px;  
+  margin: 10px;
+ }
+ 
+ .linktobodyheader {
+    color: darkblue;
+    position: absolute;
+    bottom: 0;
+    left: 5;
+ }
+
+/* END BODY */
+
+
+/* MEDIA QUERIES */
+
+/********** Large Devices Only **********/
+@media (min-width: 1200px) {
+.menuboxes {
+  height: 1475px; 
+ }
+} 
+
+/********** Small and Medium Devices Only **********/
+@media (min-width: 768px) and (max-width: 1199px) {
+  .menuboxes {
+  height: 725px; 
+ }
+} 
+
+/********** Extra Small Devices Only **********/
+@media (max-width: 767px) {
+  #collapsable-nav {
+    background: cadetblue
+  }
+ 
+  #collapsable-nav a {
+    border: 1px solid black;
+    color: lightgrey;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+  }
+  
+  #collapsable-nav li:hover {
+     background: lightslategray
+  }
+  
+  .menuboxes {
+  height: 485px; 
+ }
+} 
+
